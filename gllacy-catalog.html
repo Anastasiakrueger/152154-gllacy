@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Gllacy-catalog</title>
+</head>
+<body>
+	<header class="container">
+
+		<div class="logo-gllacy">
+			<a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Gllacy Shop"></a>
+		</div>
+
+		<nav class="basic-menu">
+			<ul>
+				<li>
+					<a class="menu-item" href="#">Каталог</a>
+					<ul>
+						<li>
+							<a class="menu-item" href="#">Новинки</a>
+						</li>
+						<li>
+							<a class="menu-item" href="#">Сливочное</a>
+						</li>
+						<li>
+							<a class="menu-item" href="#">Щербеты</a>
+						</li>
+						<li>
+							<a class="menu-item" href="#">Фруктовый лед</a>
+						</li>
+						<li>
+							<a class="menu-item" href="#">Мелорин</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a class="menu-item" href="#">Доставка и оплата</a>
+				</li>
+				<li>
+					<a class="menu-item" href="#">О компании</a>	
+				</li>
+			</ul>
+		</nav>
+
+		<div class="looking-for">
+			<a class="search" href="#"></a>
+			<form action="#" method="post">
+				<input type="search" name="Looking-for">
+			</form>
+		</div>
+
+		<div class="user-block">
+			<a class="top-btn" href="#">Вход</a>
+			<form action="#" method="post">
+				<input type="text" name="e-mail" placeholder="Электронная почта">
+				<input type="password" name="signs" placeholder="Пароль">
+				<a href="#" class="btn">Вход</a>
+				<a href="#" class="forget-password">Забыли пароль?</a>
+				<a href="#" class="new-login">Новая регистрация</a>
+			</form>
+		</div>
+
+		<div class="cart">
+			<a class="top-btn" href="#"></a>
+		</div>
+	</header>
+
+	<main class="container">
+		<div class="some-info">
+			<div> с 10 до 20, ежедневно</div>
+			<div>8 812 450-25-25</div>
+		</div>
+
+		<div class="breadcrumbs">
+			<ul>
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Каталог</a></li>
+				<li><span>Сливочное</span></li>
+			</ul>
+		</div>
+
+		<h2 class="page-title">Сливочное мороженое</h2>
+
+		<div class="filters">
+			<form action="#" method="post">
+
+			<!-- Можно ли обернуть все фильтры в div-ы с одним классом, а сортировку сделать через JS с помощью select-or-die?И если да, то какой можно класс задать?) Даже придумать не могу здесь. -->
+
+				<div class="filter-title">Сортировка:</div>
+				<select class="sorting" name="sort">
+					<option value="popularity">По популярности</option>
+					<option value="low price">Сначала недорогие</option>
+					<option value="high price">Сначала дорогие</option>
+					<option value="fatness">По жирности</option>
+				</select>
+
+
+				<div class="price-filter">
+					<div class="filter-title">Цена: 100 руб. - 500 руб.</div>
+					<div class="scale">
+						<div class="scale-active"></div>
+					</div>
+					<div class="scale-btn btn-min"></div>
+					<div class="scale-btn btn-max"></div>
+				</div>
+
+				<div class="filter-title">Жирность:</div>
+				<input class="filter-radioradio" type="radio" id="zero" value="zero-percent" name="fatness">
+				<label class="filter-radio-label" for="zero">0%</label>
+				<input class="filter-radio" type="radio" id="ten" value="ten-percent" name="fatness" checked>
+				<label class="filter-radio-label" for="ten">до 10%</label>
+				<input class="filter-radio" type="radio" id="thirty" value="thirty-percent" name="fatness">
+				<label class="filter-radio-label" for="thirty">выше 30%</label>
+
+				<div class="filter-title">Наполнители:</div>
+				<input class="filter-checkbox" type="checkbox" id="choco" value="choco" name="fillers[]" checked>
+				<label class="filter-checkbox-label" for="choco">Шоколадные</label>
+				<input class="filter-checkbox" type="checkbox" id="sugar" value="sugar" name="fillers[]" checked>
+				<label class="filter-checkbox-label" for="sugar">Сахарные присыпки</label> 
+				<input class="filter-checkbox" type="checkbox" id="fruit" value="fruit" name="fillers[]">
+				<label class="filter-checkbox-label" for="fruit">Фрукты</label>
+				<input class="filter-checkbox" type="checkbox" id="syrup" value="syrup" name="fillers[]">
+				<label class="filter-checkbox-label" for="syrup">Сиропы</label>
+				<input class="filter-checkbox" type="checkbox" id="jam" value="jam" name="fillers[]">
+				<label class="filter-checkbox-label" for="jam">Джемы</label>
+				<button class="top-btn" type="submit">Применить</button>
+			</form>
+		</div>
+
+		<article class="shop-items">
+			<div class="product">
+				<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
+				<div class="product-price">310 &#8381;/кг></div>
+				<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+			</div>
+
+			<div class="product">
+				<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
+				<div class="product-price">380 &#8381;/кг></div>
+				<a href="#">Сливочно-кофейное с кусочками шоколада</a>
+			</div>
+
+			<div class="product">
+				<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
+				<div class="product-price">355 &#8381;/кг></div>
+				<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+			</div>
+
+			<div class="product">
+				<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
+				<div class="product-price">415 &#8381;/кг></div>
+				<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+			</div>
+
+			<div class="product">
+				<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
+				<div class="product-price">325 &#8381;/кг></div>
+				<a href="#">Сливочное с брусничным джемом</a>
+			</div>
+
+			<div class="product">
+				<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
+				<div class="product-price">410 &#8381;/кг></div>
+				<a href="#">Сливочно-черничное с цельными ягодами черники</a>
+			</div>
+
+			<div class="product">
+				<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
+				<div class="product-price">375 &#8381;/кг></div>
+				<a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+			</div>
+
+			<div class="product">
+				<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
+				<div class="product-price">320 &#8381;/кг></div>
+				<a href="#">Сливочное с шоколадной стружкой</a>
+			</div>
+
+			<div class="product">
+				<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
+				<div class="product-price">440 &#8381;/кг></div>
+				<a href="#">Сливочно-ванильное с кусочками шоколада</a>
+			</div>
+
+			<div class="product">
+				<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
+				<div class="product-price">435 &#8381;/кг></div>
+				<a href="#">Сливочноe с ментоловым сиропом</a>
+			</div>
+
+			<div class="product">
+				<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
+				<div class="product-price">355 &#8381;/кг></div>
+				<a href="#">Сливочное с кусочками черного шоколада</a>
+			</div>
+
+			<div class="product">
+				<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
+				<div class="product-price">420 &#8381;/кг></div>
+				<a href="#">Сливочное с мятным сиропом</a>
+			</div>
+		</article>
+
+		<ul class="pagenav">
+			<li>1</li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+		</ul>
+	</main>
+
+	<footer class="container">
+
+		<section class="social-networks">
+			<a class="social-btn btn-tw" href="#">Твиттер</a>
+			<a class="social-btn btn-inst" href="#">Инстаграм</a>
+			<a class="social-btn btn-fb" href="#">Фейсбук</a>
+			<a class="social-btn btn-vk" href="#">Вконтакте</a> 
+		</section>
+
+		<section class="documents">
+			<ul>
+				<li>
+					<a class="" href="#">Для поставщиков</a>
+				</li>
+				<li>
+					<a class="" href="#">О производстве</a>
+				</li>
+				<li>
+					<a class="" href="#">Наши документы</a>
+				</li>
+				<li>
+					<a class="" href="#">Экологические стандарты</a>
+				</li>
+			</ul>
+		</section>
+
+		<section class="who-did">
+			<div class="logo-html">
+				<img src="http://placehold.it/150x100" width="150" height="100" alt="HTML Academy">
+			</div>
+
+			<div class="copyright">
+				<span>Сделано в <a class="academy" href="#">HTML Academy</a> @ 2016</span>
+			</div>
+		</section>
+	</footer>
+</body>
+</html>
