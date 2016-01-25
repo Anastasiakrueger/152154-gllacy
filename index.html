@@ -1,12 +1,235 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Gllacy shop</title>
+</head>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive">Базовый HTML и CSS</a>».</p>
+<body>
+	<header class="container">
 
-  </body>
-</html>
+		<div class="logo-gllacy">
+			<a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Gllacy Shop"></a>
+		</div>
+
+		<nav class="basic-menu">
+			<ul>
+				<li>
+					<a href="#">Каталог</a>
+					<ul>
+						<li>
+							<a href="#">Новинки</a>
+						</li>
+						<li>
+							<a href="#">Сливочное</a>
+						</li>
+						<li>
+							<a href="#">Щербеты</a>
+						</li>
+						<li>
+							<a href="#">Фруктовый лед</a>
+						</li>
+						<li>
+							<a href="#">Мелорин</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Доставка и оплата</a>
+				</li>
+				<li>
+					<a href="#">О компании</a>	
+				</li>
+			</ul>
+		</nav>
+
+		<div class="looking-for">
+			<a class="search" href="#"></a>
+			<form action="#" method="post">
+				<input type="search" name="Looking-for">
+			</form>
+		</div>
+
+		<div class="user-block">
+			<a class="top-btn" href="#">Вход</a>
+			<form action="#" method="post">
+				<input type="text" name="e-mail" placeholder="Электронная почта">
+				<input type="password" name="signs" placeholder="Пароль">
+
+				<a href="#" class="btn">Вход</a>
+				<a href="#" class="forget-password">Забыли пароль?</a>
+				<a href="#" class="new-login">Новая регистрация</a>
+			</form>
+		</div>
+
+		<div class="cart">
+			<a class="top-btn" href="#"></a>
+		</div>
+	</header>
+
+	<main class="container">
+
+		<div class="some-info">
+			<span> с 10 до 20, ежедневно</span>
+			<span>8 812 450-25-25</span>
+		</div>
+
+		<figure class="gallery-content">
+			<img src="http://placehold.it/150x100" width="150" height="100" alt="Ice-cream">
+			<div class="basic-title">Крем-брюле и пломбир с малиновым джемом</div>
+			<a href="#" class="btn">Давайте оба!</a>
+		</figure>
+
+		<div class="cards">
+			<div class="left-card">
+				<h2 class="card-title">Малинка даром!</h2>
+				<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+				<a href="#" class="btn">Хочу варенье!</a>
+			</div>
+
+			<div class="right-card">
+				<h2 class="card-title">Шоколадки даром!</h2>
+				<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадкой присыпки абсолютно бесплатно.</p>
+				<a href="#" class="btn">Хочу шоколадки!</a>
+			</div>
+		</div>
+
+
+		<article class="shop-items">
+			<div class="product">
+				<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
+				<div class="product__price">310 &#8381;/кг</div>
+				<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+			</div>
+
+			<!--Картинку "Хит" потом вставить через ::BEFORE, или через img?-->
+
+			<div class="product">
+				<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
+				<div class="product__price">380 &#8381;/кг</div>
+				<a href="#">Сливочно-кофейное с кусочками шоколада</a>
+			</div>
+div
+			<div class="product">
+				<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
+				<div class="product__price">355 &#8381;/кг</div>
+				<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+			</div>
+
+			<div class="product">
+				<img src="http://placehold.it/150x100article" width="150" height="100" alt="pic">
+				<div class="product__price">415 &#8381;/кг</div>
+				<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+			</div>
+		</article>
+
+		<section class="info">
+			<h2 class="info-title">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
+
+			<!--Тут тот же вопрос:) ::BEFORE или img? Листик, коровка, итд-->
+
+
+
+			<div class="info-block">
+				<p>
+					Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+				</p>
+			</div>
+
+			<div class="info-block">
+				<p>
+					Для изготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты произведены из натурального, экологически чистого сырья.
+				</p>
+			</div>
+
+			<div class="info-block">
+				<p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество. 
+				</p>
+			</div>
+
+			<div class="info-block">
+				<p>
+					Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.
+				</p>
+			</div>
+		</section>
+
+		<div class="box-other">
+			<div class="left-box">
+				<h3>Новое в нашем блоге</h3>
+				<a class="blog-url" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+			</div>	
+
+			<div class="right-box">
+				<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+				<form action="#" method="post">
+					<input type="text" placeholder="Электронная почта">
+					<a class="btn" href="#">Отправить</a>
+				</form>
+			</div>
+		</div>
+
+		<section class="index-content">
+			<div class="map">
+				<img src="http://placehold.it/150x100" width="150" height="100" alt="Map">
+			</div>
+
+			<div class="contact-info">
+				<p>Адрес главного офиса и<br>
+					офлайн магазина:<br>
+					<strong>ул. Большая Конюшенная<br>
+						19/8, Санкт-Петербург</strong></p>
+
+						<p>Для заказов по телефону:<br>
+							<strong>8 812 450-25-25</strong><br>
+							(с 10 до 20 ежедневно)</p>
+
+							<a class="btn" href="#">Форма обратной связи</a>
+						</div>
+						</section>
+					</main>
+
+					<footer class="container">
+
+						<section class="social-networks">
+							<a class="social-btn btn-tw" href="#">Твиттер</a>
+							<a class="social-btn btn-inst" href="#">Инстаграм</a>
+							<a class="social-btn btn-fb" href="#">Фейсбук</a>
+							<a class="social-btn btn-vk" href="#">Вконтакте</a> 
+						</section>
+
+						<section class="documents">
+							<ul>
+								<li>
+
+									<!--Картинка сердечко ::BEFORE, или нет?-->
+
+									<a class="" href="#">Для поставщиков</a>
+								</li>
+								<li>
+									<a class="" href="#">О производстве</a>
+								</li>
+								<li>
+									<a class="" href="#">Наши документы</a>
+								</li>
+								<li>
+									<a class="" href="#">Экологические стандарты</a>
+								</li>
+							</ul>
+						</section>
+
+						<section class="who-did">
+							<div class="logo-html">
+								<img src="http://placehold.it/150x100" width="150" height="100" alt="HTML Academy">
+							</div>
+
+							<div class="copyright">
+								<span>Сделано в <a class="academy" href="#">HTML Academy</a> @ 2016</span>
+							</div>
+						</section>
+
+					</footer>
+				</body>
+
+				</html>
+
