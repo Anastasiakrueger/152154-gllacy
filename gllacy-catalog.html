@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Gllacy-catalog</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body class="inner-page">
 	<div class="wrapper">
@@ -12,12 +13,12 @@
 
 				<div class="header-top clearfix">
 					<div class="logo-gllacy">
-						<a href="#"><img src="http://placehold.it/150x100" width="153" height="63" alt="gllacy"></a>
+						<a href="#"><img src="img/Logo-gllacy.svg" width="154" height="64" alt="gllacy"></a>
 					</div>
 
 					<nav class="menu">
 						<ul>
-							<li class="with-sub-menu">
+							<li class="with-sub-menu activ">
 								<a class="menu-item" href="#">Каталог</a>
 								<ul class="sub-menu">
 									<li>
@@ -95,8 +96,8 @@
 				</div>
 
 				<div class="some-info">
-					<div> с 10 до 20, ежедневно</div>
-					<div>8 812 450-25-25</div>
+					<div class="time-work"> с 10 до 20, ежедневно</div>
+					<div class="number">8 812 450-25-25</div>
 				</div>
 			</header>
 
@@ -131,10 +132,12 @@
 								<div class="price-filter">
 									<div class="price-scale">
 										<div class="scale">
-											<div class="scale-active"></div>
-										</div>
-										<div class="scale-btn btn-min"></div>
-										<div class="scale-btn btn-max"></div>
+											<div style="width: 70%" class="scale-bar"></div>
+									
+                  <div class="toggle min-togle"></div>
+                  <div class="toggle max-toggle"></div>
+                  </div>
+
 									</div>
 								</div>
 							</fieldset>
@@ -165,8 +168,8 @@
 								<label class="filter-checkbox-label" for="syrup">Сиропы</label>
 								<input class="filter-checkbox" type="checkbox" id="jam" value="jam" name="fillers[]">
 								<label class="filter-checkbox-label" for="jam">Джемы</label>
-								<button class="top-btn" type="submit">Применить</button>
 							</fieldset>
+							<button class="filter-btn" type="submit">Применить</button>
 						</div>
 					</form>
 				</div>
@@ -174,8 +177,8 @@
 				<section class="shop-items">
 					<div class="product">
 						<div class="product-price">
-							<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
-							<div class="price-tag">310 &#8381;/кг></div>
+							<img src="img/orange.png" width="200" height="200" alt="pic">
+							<div class="price-tag">310 &#8381;/кг</div>
 						</div>
 						<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 						<div class="hidden-element">
@@ -185,8 +188,8 @@
 
 					<div class="product">
 						<div class="product-price">
-							<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
-							<div class="price-tag">380 &#8381;/кг></div>
+							<img src="img/coffee.png" width="200" height="200" alt="pic">
+							<div class="price-tag">380 &#8381;/кг</div>
 						</div>
 						<a href="#">Сливочно-кофейное с кусочками шоколада</a>
 						<div class="hidden-element">
@@ -196,8 +199,8 @@
 
 					<div class="product">
 						<div class="product-price">
-							<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
-							<div class="price-tag">355 &#8381;/кг></div>
+							<img src="img/strawberry.png" width="200" height="200" alt="pic">
+							<div class="price-tag">355 &#8381;/кг</div>
 						</div>
 						<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 						<div class="hidden-element">
@@ -207,8 +210,8 @@
 
 					<div class="product">
 						<div class="product-price">
-							<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
-							<div class="price-tag">415 &#8381;/кг></div>
+							<img src="img/creme-brulee.png" width="200" height="200" alt="pic">
+							<div class="price-tag">415 &#8381;/кг</div>
 						</div>
 						<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
 						<div class="hidden-element">
@@ -218,8 +221,8 @@
 
 					<div class="product">
 						<div class="product-price">
-							<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
-							<div class="price-tag">325 &#8381;/кг></div>
+							<img src="img/cowberry.png" width="200" height="200" alt="pic">
+							<div class="price-tag">325 &#8381;/кг</div>
 						</div>
 						<a href="#">Сливочное с брусничным джемом</a>
 						<div class="hidden-element">
@@ -229,8 +232,8 @@
 
 					<div class="product">
 						<div class="product-price">
-							<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
-							<div class="price-tag">410 &#8381;/кг></div>
+							<img src="img/blueberries.png" width="200" height="200" alt="pic">
+							<div class="price-tag">410 &#8381;/кг</div>
 						</div>
 						<a href="#">Сливочно-черничное с цельными ягодами черники</a>
 						<div class="hidden-element">
@@ -240,8 +243,8 @@
 
 					<div class="product">
 						<div class="product-price">
-							<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
-							<div class="price-tag">375 &#8381;/кг></div>
+							<img src="img/lemon.png" width="200" height="200" alt="pic">
+							<div class="price-tag">375 &#8381;/кг</div>
 						</div>
 						<a href="#">Сливочно-лимонное с карамельной присыпкой</a>
 						<div class="hidden-element">
@@ -251,8 +254,8 @@
 
 					<div class="product">
 						<div class="product-price">
-							<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
-							<div class="price-tag">320 &#8381;/кг></div>
+							<img src="img/choco-shavings.png" width="200" height="200" alt="pic">
+							<div class="price-tag">320 &#8381;/кг</div>
 						</div>
 						<a href="#">Сливочное с шоколадной стружкой</a>
 						<div class="hidden-element">
@@ -262,8 +265,8 @@
 
 					<div class="product">
 						<div class="product-price">
-							<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
-							<div class="price-tag">440 &#8381;/кг></div>
+							<img src="img/vanilla.png" width="200" height="200" alt="pic">
+							<div class="price-tag">440 &#8381;/кг</div>
 						</div>
 						<a href="#">Сливочно-ванильное с кусочками шоколада</a>
 						<div class="hidden-element">
@@ -273,8 +276,8 @@
 
 					<div class="product">
 						<div class="product-price">
-							<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
-							<div class="price-tag">435 &#8381;/кг></div>
+							<img src="img/menthol.png" width="200" height="200" alt="pic">
+							<div class="price-tag">435 &#8381;/кг</div>
 						</div>
 						<a href="#">Сливочноe с ментоловым сиропом</a>
 						<div class="hidden-element">
@@ -284,8 +287,8 @@
 
 					<div class="product">
 						<div class="product-price">
-							<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
-							<div class="price-tag">355 &#8381;/кг></div>
+							<img src="img/black-chocolate.png" width="200" height="200" alt="pic">
+							<div class="price-tag">355 &#8381;/кг</div>
 						</div>
 						<a href="#">Сливочное с кусочками черного шоколада</a>
 						<div class="hidden-element">
@@ -295,8 +298,8 @@
 
 					<div class="product">
 						<div class="product-price">
-							<img src="http://placehold.it/150x100" width="150" height="100" alt="pic">
-							<div class="price-tag">420 &#8381;/кг></div>
+							<img src="img/mint.png" width="200" height="200" alt="pic">
+							<div class="price-tag">420 &#8381;/кг</div>
 						</div>
 						<a href="#">Сливочное с мятным сиропом</a>
 						<div class="hidden-element">
@@ -305,20 +308,21 @@
 					</div>
 				</section>
 
-				<ul class="pagenav">
-					<li>1</li>
-					<li><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li><a href="#">4</a></li>
-					<li><a href="#">5</a></li>
-				</ul>
-			</main>
+				<nav class="pagenav">
+				  <a class="prev page-numbers" href="#"> < </a>
+					<span class="page-numbers current">1</span>
+					<a class="page-numbers" href="#">2</a>
+					<a class="page-numbers" href="#">3</a>
+					<a class="page-numbers" href="#">4</a>
+					<a class="page-numbers" href="#">5</a>
+					<a class="next page-numbers"> > </a>
+			</nav>
 
 			<footer class="basic-footer">
 
 				<section class="who-did">
 					<div class="logo-html">
-						<img src="http://placehold.it/150x100" width="150" height="100" alt="html-academy">
+						<img src="img/Logo-html.svg" width="108" height="38" alt="html-academy">
 					</div>
 
 					<div class="copyright">
