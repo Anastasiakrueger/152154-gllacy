@@ -8,6 +8,10 @@
 </head>
 
 <body>
+	<input type="radio" id="btn-1" name="toggle" checked>
+	<input type="radio" id="btn-2" name="toggle">
+	<input type="radio" id="btn-3" name="toggle">
+
 	<div class="page-wrapper">
 		<div class="content-wrapper">
 			<header class="basic-header">
@@ -50,7 +54,7 @@
 
 					<div class="header-right clearfix">
 						<div class="looking-for">
-							<a class="search" href="#"></a>
+							<a class="top-btn search" href="#"></a>
 							<div class="hidden-element">
 								<div class="style-element">
 									<form action="#" method="post">
@@ -62,18 +66,6 @@
 
 						<div class="user-block">
 							<a class="top-btn" href="#">Вход</a>
-							<div class="hidden-element">
-								<div class="style-element">
-									<form action="#" method="post">
-										<input type="text" name="e-mail" placeholder="Электронная почта">
-										<input type="password" name="signs" placeholder="Пароль">
-										<button class="btn" type="submit">Вход</button>
-
-										<a href="#" class="forget-password">Забыли пароль?</a>
-										<a href="#" class="new-login">Новая регистрация</a>
-									</form>
-								</div>
-							</div>
 						</div>
 
 						<div class="cart">
@@ -104,10 +96,6 @@
 
 			<div class="slider">
 
-				<input type="radio" id="btn-1" name="toggle" checked>
-				<input type="radio" id="btn-2" name="toggle">
-				<input type="radio" id="btn-3" name="toggle">
-
 				<div class="slide" id="slide1">
 					<div class="basic-title">Крем-брюле и пломбир с малиновым джемом</div>
 					<a href="#" class="slide-btn">Давайте оба!</a>
@@ -135,20 +123,20 @@
 					<h2 class="card-title">Малинка даром!</h2>
 					<p>При покупке 2 кг любого фруктового<br> мороженого, добавим в ваш заказ банку<br>
 						малинового варенья бесплатно.</p>
-						<a href="#" class="btn-card">Хочу варенье!</a>
+						<a href="#" class="btn btn-berries">Хочу варенье!</a>
 					</div>
 
 					<div class="card chocolate">
 						<h2 class="card-title">Шоколадки даром!</h2>
 						<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадкой присыпки абсолютно бесплатно.</p>
-						<a href="#" class="btn-card">Хочу шоколадки!</a>
+						<a href="#" class="btn btn-chocolate">Хочу шоколадки!</a>
 					</div>
 				</div>
 
 
 				<section class="shop-items">
 					<div class="product">
-						<div class="product-price">
+						<div class="product-price hit">
 							<img src="img/orange.png" width="200" height="200" alt="pic">
 							<div class="price-tag">310 &#8381;/кг</div>
 						</div>
@@ -156,7 +144,7 @@
 					</div>
 
 					<div class="product">
-						<div class="product-price">
+						<div class="product-price hit">
 							<img src="img/coffee.png" width="200" height="200" alt="pic">
 							<div class="price-tag">380 &#8381;/кг</div>
 						</div>
@@ -164,7 +152,7 @@
 					</div>
 
 					<div class="product">
-						<div class="product-price">
+						<div class="product-price hit">
 							<img src="img/strawberry.png" width="200" height="200" alt="pic">
 							<div class="price-tag">355 &#8381;/кг</div>
 						</div>
@@ -172,7 +160,7 @@
 					</div>
 
 					<div class="product">
-						<div class="product-price">
+						<div class="product-price hit">
 							<img src="img/creme-brulee.png" width="200" height="200" alt="pic">
 							<div class="price-tag">415 &#8381;/кг</div>
 						</div>
@@ -207,103 +195,155 @@
 					<div class="promo-card clearfix">
 						<div class="card blog">
 							<h3>Новое в нашем блоге</h3>
-							<a class="blog-url" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+							<a class="blog-url" href="#">10 способов сервировки<br>
+								фруктовых щербетов<br>
+								к столу</a>
+							</div>
+
+							<div class="card send">
+								<div class="frame">
+									<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+									<form action="#" method="post">
+										<input type="text" placeholder="Электронная почта">
+										<a class="btn btn-send" href="#">Отправить</a>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="map">
+						<div class="map-canvas" id="map-canvas"></div>
+
+						<div class="content-wrapper">
+							<div class="map-info">
+								<p>
+									Адрес главного офиса и<br>
+									офлайн магазина:<br>
+									<strong>ул. Большая Конюшенная<br>
+										19/8, Санкт-Петербург</strong>
+									</p>
+
+									<p class="location">
+										Для заказов по телефону:<br>
+										<strong>8 812 450-25-25</strong><br>
+										(с 10 до 20 ежедневно)
+									</p>
+
+									<a class="btn btn-form" href="#">Форма обратной связи</a>
+								</div>
+							</div>
 						</div>
 
-						<div class="card send">
-							<div class="border">
-								<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+						<div class="content-wrapper">
+							<footer class="basic-footer clearfix">
+
+								<section class="who-did">
+									<div class="logo-html">
+										<img src="img/Logo-html.svg" width="108" height="38" alt="html-academy">
+									</div>
+
+									<div class="copyright">
+										<span>Сделано в <a class="academy" href="#">HTML Academy</a> @ 2016</span>
+									</div>
+								</section>
+
+								<section class="social-networks">
+									<a class="social-btn btn-tw" href="#">Твиттер</a>
+									<a class="social-btn btn-inst" href="#">Инстаграм</a>
+									<a class="social-btn btn-fb" href="#">Фейсбук</a>
+									<a class="social-btn btn-vk" href="#">Вконтакте</a>
+								</section>
+
+								<section class="documents">
+									<ul>
+										<li>
+
+											<a class="left-dct for-heart" href="#">Для поставщиков</a>
+										</li>
+										<li>
+											<a class="left-dct" href="#">О производстве</a>
+										</li>
+										<li>
+											<a class="right-dct" href="#">Наши документы</a>
+										</li>
+										<li>
+											<a class="right-dct" href="#">Экологические стандарты</a>
+										</li>
+									</ul>
+								</section>
+
+							</footer>
+
+							<div class="modal-content">
 								<form action="#" method="post">
-									<input type="text" placeholder="Электронная почта">
-									<a class="btn-card" href="#">Отправить</a>
+									<input type="text" name="e-mail" placeholder="Электронная почта">
+									<input type="password" name="signs" placeholder="Пароль">
+									<button class="btn btn-modal-content" type="submit">Войти</button>
+
+									<a href="#" class="forget-password">Забыли пароль?</a>
+									<a href="#" class="new-login">Новая регистрация</a>
 								</form>
 							</div>
-						</div>
-					</div>
-				</div>
 
-				<div class="map">
-					<div class="map-canvas" id="map-canvas"></div>
-
-					<div class="content-wrapper">
-						<div class="map-info">
-							<p>
-								Адрес главного офиса и<br>
-								офлайн магазина:<br>
-								<strong>ул. Большая Конюшенная<br>
-									19/8, Санкт-Петербург</strong>
-								</p>
-
-								<p class="location">
-									Для заказов по телефону:<br>
-									<strong>8 812 450-25-25</strong><br>
-									(с 10 до 20 ежедневно)
-								</p>
-
-								<a class="btn-card" href="#">Форма обратной связи</a>
+							<div class="cart-content">
+							<div class="cart-element">
+									<div class="description"><a href="#">Пломбир с апельсиновым джемом 1,5 кг x 200 руб 300 руб</a></div>
+									<div class="cart-picture"><img src="img/little-orange.png" width="33" height="33" alt="orange"></div>
+									<div class="remove-btn"><button class="remove" type="submit"></button></div>
+								</div>
+								<div class="cart-element">
+									<div class="description"><a href="">Клубничный пломбир с присыпкой из белого шоколада 1,5 x 300 руб 450 руб</a></div>
+									<div class="cart-picture"><img src="img/little-strawberry.png" width="33" height="33" alt="strawberry"></div>
+									<div class="remove-btn"><button class="remove" type="submit"></button></div>
+								</div>
+								<div class="final-price">Итого: 750 руб.</div>
+								<a class="btn">Оформить заказ</a>
 							</div>
 						</div>
 					</div>
 
-					<div class="content-wrapper">
-						<footer class="basic-footer clearfix">
+					<div class="feedback">
+					<button class="feedback-close" type="button" title="Закрыть">Закрыть</button>
+					<h2 class="feedback-title">Мы обязательно вам ответим!</h2>
+					<form class="feedback-form" action="#" method="post">
+          
+          <input type="text" name="name" placeholder="Как вас зовут?">
 
-							<section class="who-did">
-								<div class="logo-html">
-									<img src="img/Logo-html.svg" width="108" height="38" alt="html-academy">
-								</div>
+          <input type="text" name="e-mail" placeholder="Ваша почта для ответа?">
 
-								<div class="copyright">
-									<span>Сделано в <a class="academy" href="#">HTML Academy</a> @ 2016</span>
-								</div>
-							</section>
+          <textarea class="text-feedback" name="text-send" id="text-send" rows="5" placeholder="Напишите что-нибудь..."></textarea>
+          <button class="btn btn-feedback" type="submit">Отправить</button>
 
-							<section class="social-networks">
-								<a class="social-btn btn-tw" href="#">Твиттер</a>
-								<a class="social-btn btn-inst" href="#">Инстаграм</a>
-								<a class="social-btn btn-fb" href="#">Фейсбук</a>
-								<a class="social-btn btn-vk" href="#">Вконтакте</a>
-							</section>
-
-							<section class="documents">
-								<ul>
-									<li>
-
-									<a class="for-heart" href="#">Для поставщиков</a>
-									</li>
-									<li>
-										<a class="" href="#">О производстве</a>
-									</li>
-									<li>
-										<a class="" href="#">Наши документы</a>
-									</li>
-									<li>
-										<a class="" href="#">Экологические стандарты</a>
-									</li>
-								</ul>
-							</section>
-
-						</footer>
+					</form>
 					</div>
-				</div>
-				<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
-				<script type="text/javascript">
-					function initialize() {
-						var mapOptions = {
-							zoom: 15,
-							center: new google.maps.LatLng(59.9384313,30.3425057)
-						}
 
-						var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-						var image = "img/pin.png";
-						var myLatLng = new google.maps.LatLng(59.9384313,30.3246357);
-						var beachMarker = new google.maps.Marker({
-							position: myLatLng,
-							map: map,
-							icon: image
-						});
-					}
-					google.maps.event.addDomListener(window, 'load', initialize);
-				</script>
-			</body>
-			</html>
+					<div class="search-form">
+					<form action="#" method="post">
+					<input type="text" name="search" id="search" placeholder="Что ищем?">
+					</form>
+					</div>
+
+						</div>
+					</div>
+					<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+					<script type="text/javascript">
+						function initialize() {
+							var mapOptions = {
+								zoom: 15,
+								center: new google.maps.LatLng(59.9384313,30.3425057)
+							}
+
+							var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+							var image = "img/pin.png";
+							var myLatLng = new google.maps.LatLng(59.9384313,30.3246357);
+							var beachMarker = new google.maps.Marker({
+								position: myLatLng,
+								map: map,
+								icon: image
+							});
+						}
+						google.maps.event.addDomListener(window, 'load', initialize);
+					</script>
+				</body>
+				</html>
