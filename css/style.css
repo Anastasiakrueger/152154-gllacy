@@ -606,6 +606,11 @@
   padding: 0;
  }
 
+ .looking-for .search-btn:hover {
+  background-color: #fff;
+  background-image: url('../img/loupe-black.png') center no-repeat;
+ }
+
  .user-block {
  	position: relative;
  	display: block;
@@ -649,6 +654,10 @@
 
  .cart .cart-btn {
   text-align: right;
+ }
+
+ .cart .cart-btn:active {
+  background: #fff;
  }
 
  .cart {
@@ -858,8 +867,7 @@ text-align: center;
  }
 
  .btn-berries {
-  margin-bottom: 25px;
-  margin-right: 22px;
+  margin: 0;
  }
 
  .btn {
@@ -902,6 +910,10 @@ text-align: center;
  	font-size: 16px;
  	padding: 0 10px;
  	box-sizing: border-box;
+ }
+
+ .inner-page .product {
+  margin-top: 40px;
  }
 
  .hit:before {
@@ -982,6 +994,7 @@ text-align: center;
   line-height: 22px;
  	width: 50%;
  	margin-bottom: 20px;
+  width: 345px;
 
  	color: #323232;
  }
@@ -1100,15 +1113,15 @@ text-align: center;
   border-radius: 20px;
   background: url('../img/send-bg.jpg') no-repeat center;
 
-  padding: 5px 5px;
+  padding: 6px 6px;
   box-sizing: border-box;
  }
 
 .frame {
 
 border-radius: 20px;
-height: 200px;
-width: 400px;
+height: 215px;
+width: 515px;
 background: #f8f7f4;
 
  }
@@ -1120,6 +1133,9 @@ background: #f8f7f4;
  	color: #323232;
  	position: relative;
   margin: 0;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  font-weight: 400;
  }
 
  .strong {
@@ -1135,7 +1151,7 @@ background: #f8f7f4;
   min-width: 130px;
   min-height: 47px;
   left: 300px;
-  bottom: 10px;
+  bottom: 35px;
   box-sizing: border-box;
 
   font-weight: 700;
@@ -1396,6 +1412,13 @@ vertical-align: top;
  	border-radius: 20px;
  	min-height: 40px;
  	min-width: 195px;
+
+  color: #fff;
+ }
+
+ .sorting:active {
+  background: #fff;
+  color: #000;
  }
 
  .filter-title {
@@ -1427,7 +1450,7 @@ vertical-align: top;
  	background: #f8f7f4;
  }
 
- .toggle {
+ .toggle .min-toggle {
  	position: absolute;
  	width: 20px;
  	height: 20px;
@@ -1435,7 +1458,16 @@ vertical-align: top;
  	border-radius: 50%;
  }
 
+.toggle .max-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #f8f7f4;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
 
+}
 
  .form-series label {
  	color: #fff;
@@ -1447,7 +1479,7 @@ vertical-align: top;
  }
 
  .long2 {
- 	width: 850px;
+ 	width: 900px;
  	margin-bottom: 30px;
  	position: relative;
   margin-top: 40px;
@@ -1478,7 +1510,9 @@ vertical-align: top;
 }
 
 
-/* Чекбокс */
+/* Чекбокс. Радиобаттон. */
+
+
 
 .filter-checkbox[type="checkbox"] {
 	display: none;
@@ -1491,6 +1525,7 @@ vertical-align: top;
   font-weight: 700;
 
 	margin-right: 50px;
+  margin-left: 15px;;
   padding-left: 25px;
   vertical-align: top;
   cursor: pointer;
@@ -1525,12 +1560,57 @@ background-size: contain;
   text-decoration: none;
   font-size: 16px;
   border-radius: 80px;
-  right: -80px;
+  right: -145px;
+  top: 20px;
   background: rgba(255, 255, 255, 0.2);
   vertical-align: top;
   border: 2px solid #fff;
   box-sizing: border-box;
   font-weight: 700;
+
+}
+
+.filter-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.filter-btn:active {
+  background: #eaeaea;
+}
+
+.filter-radio-label {
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+  vertical-align: top;
+  margin-right: 20px;
+}
+
+.filter-radio-label::before {
+  content: "";
+
+  position: absolute;
+  display: block;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  top: 0;
+  left: 0;
+
+}
+
+.filter-radio:checked + .filter-radio-label::before {
+  content: "";
+
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  background-position: center;
+  border-radius: 50%;
 
 }
 
@@ -1593,7 +1673,7 @@ input[type="password"]:focus {
 
 .cart-content {
   position: absolute;
-  top: 120px;
+  top: 260px;
   left: 30%;
 
   width: 510px;
@@ -1650,6 +1730,10 @@ input[type="password"]:focus {
   box-shadow: 0 20px 20px 10px rgba(0, 0, 0, 0.4);
 }
 
+.feedback input[type="text"] {
+  margin-top: ;
+}
+
 .feedback-close {
   position: absolute;
   top: 15px;
@@ -1693,10 +1777,12 @@ input[type="password"]:focus {
   border: 15px 25px;
 }
 
+input
+
 .search-form {
   position: absolute;
-  top: 500px;
-  left: 400px;
+  top: 60px;
+  right: 615px;
   width: 310px;
 
   padding: 15px 15px;
