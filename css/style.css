@@ -430,7 +430,7 @@
  }
 
  .sprite {
-    background-image: url(../img/sprite.png);
+    background-image: url(sprite.png);
     background-repeat: no-repeat;
     display: block;
 }
@@ -438,44 +438,51 @@
 .sprite-cart {
     width: 21px;
     height: 20px;
-    background-position: -5px -5px;
+    background-position: -10px -10px;
 }
 
 .sprite-facebook {
     width: 32px;
     height: 32px;
-    background-position: -5px -35px;
+    background-position: -10px -50px;
 }
 
 .sprite-inst {
     width: 32px;
     height: 32px;
-    background-position: -5px -77px;
+    background-position: -10px -102px;
 }
 
 .sprite-loupe {
     width: 17px;
     height: 17px;
-    background-position: -5px -119px;
+    background-position: -10px -154px;
 }
 
 .sprite-twitter {
     width: 33px;
     height: 32px;
-    background-position: -5px -146px;
+    background-position: -10px -191px;
 }
 
 .sprite-user {
     width: 21px;
     height: 19px;
-    background-position: -5px -188px;
+    background-position: -10px -243px;
+}
+
+.sprite-user-block-black {
+    width: 20px;
+    height: 19px;
+    background-position: -10px -282px;
 }
 
 .sprite-vk {
     width: 32px;
     height: 32px;
-    background-position: -5px -217px;
+    background-position: -10px -321px;
 }
+
 
 
  body {
@@ -596,7 +603,7 @@
   margin-left: 2%;
 
   background: url('../img/sprite.png');
-  background-position: 4px -110px;
+  background-position: -2px -147px;
  }
 
   .looking-for .search-btn {
@@ -606,9 +613,8 @@
   padding: 0;
  }
 
- .looking-for .search-btn:hover {
-  background-color: #fff;
-  background-image: url('../img/loupe-black.png') center no-repeat;
+ .search-btn:active {
+  background: #fff url('../img/loupe-black.png') center no-repeat;
  }
 
  .user-block {
@@ -644,12 +650,18 @@
   width: 19px;
   height: 19px;
   background: url('../img/sprite.png') no-repeat;
-  background-position: -5px -188px;
+  background-position: -10px -243px;
  }
 
  .user-btn {
   width: 55px;
   text-align: right;
+ }
+
+ .user-btn:active {
+  background: #f8f7f4 url('../img/user-block-black.png') no-repeat;
+  
+  color: #000;
  }
 
  .cart .cart-btn {
@@ -685,7 +697,7 @@
  	font-size: 14px;
  	font-weight: 700;
  	background: url('../img/sprite.png') no-repeat center;
- 	background-position: -5px -5px;
+ 	background-position: -10px -10px;
 
  }
 
@@ -848,7 +860,8 @@
  	font-weight: 800;
 
  	color: #fff;
-text-align: center;
+  text-align: center;
+  padding: 0 5px;
  }
 
  .card-title {
@@ -859,7 +872,8 @@ text-align: center;
  }
 
  .berries {
- 	background: #be4669 url('../img/raspberries-bg.jpg')
+  float: left;
+ 	background: url('../img/raspberries-bg.jpg')
  	no-repeat center;
 
  	border-radius: 20px;
@@ -867,7 +881,7 @@ text-align: center;
  }
 
  .btn-berries {
-  margin: 0;
+  margin-right: 25px;
  }
 
  .btn {
@@ -892,10 +906,14 @@ text-align: center;
 
  .chocolate {
  	float: right;
- 	background: #4d2514 url('../img/chocolate-bg.jpg') 
+ 	background: url('../img/chocolate-bg.jpg') 
   no-repeat center;
 
  	border-radius: 20px;
+ }
+
+ .btn-chocolate {
+  margin-right: 25px;
  }
 
  .shop-items {
@@ -976,7 +994,7 @@ text-align: center;
  	background: url('../img/wafer.jpg') repeat;
 
  	border-radius: 20px;
- 	min-width: 860px;
+ 	min-width: 95%;
  	margin-bottom: 40px;
   padding-left: 20px;
  }
@@ -1086,10 +1104,10 @@ text-align: center;
  }
 
  .blog {
- 	background: #fff url('../img/blog-bg.jpg')
- 	no-repeat center;
+ 	background: url('../img/blog-bg.jpg') no-repeat center;
   border-radius: 20px;
   box-sizing: border-box;
+  padding: 20px;
 
  }
 
@@ -1102,6 +1120,7 @@ text-align: center;
  .blog a {
  	color: #000;
  	font-size: 24px;
+  font-weight: 700;
 
  	text-decoration: underline;
  }
@@ -1173,6 +1192,10 @@ background: #f8f7f4;
  	position: relative;
  }
 
+ .map-info p {
+  padding-left: 30px;
+ }
+
  /*FOOTER*/
 
  .basic-footer {
@@ -1210,19 +1233,19 @@ background: #f8f7f4;
  }
 
  .btn-tw {
- 	background-position: -5px -146px;
+ 	background-position: -10px -191px;
  }
 
  .btn-inst {
- 	background-position: -5px -77px;
+ 	background-position: -10px -102px;
  }
 
  .btn-fb {
- 	background-position: -5px -35px;
+ 	background-position: -10px -50px;
  }
 
  .btn-vk {
- 	background-position: -5px -217px;
+ 	background-position: -10px -321px;
  }
 
  .documents {
@@ -1319,7 +1342,7 @@ vertical-align: top;
  }
 
  .map-info{
- 	width: 300px;
+ 	width: 280px;
  	padding: 20px;
  	background-color: #ffffff;
  	border-radius: 10px;
@@ -1327,6 +1350,11 @@ vertical-align: top;
  	top: 50%;
  	right: 0;
  	transform: translate(0, -50%);
+ }
+
+ .btn-form {
+  margin-right: 25px;
+  height: 50px;
  }
 
  /**Inner page  **/
@@ -1412,9 +1440,17 @@ vertical-align: top;
  	border-radius: 20px;
  	min-height: 40px;
  	min-width: 195px;
+  text-align: center;
 
   color: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
  }
+
+ .sorting::-ms-expland {
+  display: none;
+}
 
  .sorting:active {
   background: #fff;
@@ -1423,13 +1459,14 @@ vertical-align: top;
 
  .filter-title {
  	color: #fff;
+  margin-left: 18px;
+  margin-bottom: 10px;
+
+  font-weight: 700;
  }
 
  .price-filter {
- 	width: 220px;
-
-
-
+ 	width: 200px;
  }
 
  .price-scale {
@@ -1503,11 +1540,47 @@ vertical-align: top;
  }
 
  .current {
+  position: absolute;
+
  	display: inline-block;
  	padding-right: 20px;
 	width: 27px;
 	height: 27px;
 }
+
+.current::before {
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+
+  width: 10px;
+  height: 15px;
+  background: url('../img/arrow.png') no-repeat center;
+
+}
+
+.page-five {
+  position: relative;
+  display: block;
+}
+
+.page-five::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  right: -5px;
+
+  width: 10px;
+  height: 15px;
+  background: url('../img/arrow.png') no-repeat center;
+  opacity: 100%;
+}
+
+
+
+
 
 
 /* Чекбокс. Радиобаттон. */
@@ -1561,7 +1634,7 @@ background-size: contain;
   font-size: 16px;
   border-radius: 80px;
   right: -145px;
-  top: 20px;
+  top: 30px;
   background: rgba(255, 255, 255, 0.2);
   vertical-align: top;
   border: 2px solid #fff;
@@ -1573,10 +1646,12 @@ background-size: contain;
 .filter-btn:hover {
   background: #fff;
   color: #000;
+
 }
 
 .filter-btn:active {
   background: #eaeaea;
+    border: 2px solid #eaeaea;
 }
 
 .filter-radio-label {
@@ -1587,6 +1662,7 @@ background-size: contain;
   cursor: pointer;
   vertical-align: top;
   margin-right: 20px;
+  margin-left: 20px;
 }
 
 .filter-radio-label::before {
@@ -1618,16 +1694,22 @@ background-size: contain;
 
 .modal-content {
   position: absolute;
-  top: 120px;
-  left: 60%;
+  top: 55px;
+  left: 58%;
 
   width: 240px;
   padding: 15px 20px;
 
   color: #000;
   background: #f8f7f4;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0 20px 20px 10px rgba(0, 0, 0, 0.4);
+
+  display: none;
+}
+
+.modal-content-show {
+  display: block;
 }
 
 .modal-content .btn-modal-content {
@@ -1669,12 +1751,13 @@ input[type="password"]:focus {
   float: left;
   color: #000;
   font-size: 13px;
+  padding-left: 20px;
 }
 
 .cart-content {
   position: absolute;
-  top: 260px;
-  left: 30%;
+  top: 55px;
+  left: 52%;
 
   width: 510px;
   padding: 10px 20px;
@@ -1685,6 +1768,10 @@ input[type="password"]:focus {
   box-sizing: border-box;
 
   display: none;
+}
+
+.cart-content-show {
+  display: block;
 }
 
 .cart-content a {
@@ -1719,19 +1806,42 @@ input[type="password"]:focus {
 
 .feedback {
   position: absolute;
-  top: 300px;
-  right: 300px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 430px;
   padding: 20px 30px;
+  margin-top: 340px;
+  height: 440px;
+  position: fixed;
+  opacity: 100%;
 
   color: #000;
   background: #f8f7f4;
   border-radius: 10px;
   box-shadow: 0 20px 20px 10px rgba(0, 0, 0, 0.4);
+
+  display: none;
 }
 
+/*
+.parent_feedback {
+  background: #000;
+  opacity: 0.7;
+  position: fixed;
+  width: 100%;
+  z-index: 100%;
+  top: 0;
+  left: 0;
+} */
+
 .feedback input[type="text"] {
-  margin-top: ;
+  margin-top: 20px;
+}
+
+.text-feedback {
+  margin-top: 20px;
+  width: 400px;
 }
 
 .feedback-close {
@@ -1777,7 +1887,7 @@ input[type="password"]:focus {
   border: 15px 25px;
 }
 
-input
+
 
 .search-form {
   position: absolute;
@@ -1789,6 +1899,12 @@ input
   background: #f8f7f4;
   border-radius: 10px;
   box-shadow: 0 20px 20px 10px rgba(0, 0, 0, 0.4);
+
+  display: none;
+}
+
+.search-form-show {
+  display: block;
 }
 
 #search {

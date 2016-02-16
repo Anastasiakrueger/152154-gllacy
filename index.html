@@ -121,7 +121,7 @@
 			<div class="promo-card clearfix">
 				<div class="card berries">
 					<h2 class="card-title">Малинка даром!</h2>
-					<p>При покупке 2 кг любого фруктового<br> мороженого, добавим в ваш заказ банку<br>
+					<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
 						малинового варенья бесплатно.</p>
 						<a href="#" class="btn btn-berries">Хочу варенье!</a>
 					</div>
@@ -286,6 +286,18 @@
 								</form>
 							</div>
 
+							<script>
+              var link = document.querySelector(".user-block");
+              var magic = document.querySelector(".modal-content");
+
+              link.addEventListener("click", function(event) {
+              event.preventDefault();
+              magic.classList.add("modal-content-show");
+            });
+         
+
+							</script>
+
 							<div class="cart-content">
 							<div class="cart-element">
 									<div class="description"><a href="#">Пломбир с апельсиновым джемом 1,5 кг x 200 руб 300 руб</a></div>
@@ -303,6 +315,17 @@
 						</div>
 					</div>
 
+					<script>
+          var buy = document.querySelector(".cart");
+          var popup = document.querySelector(".cart-content");
+
+          
+          	popup.classList.add("cart-content-show");
+          });
+
+					</script>
+
+          <div class="parent_feedback">
 					<div class="feedback">
 					<button class="feedback-close" type="button" title="Закрыть">Закрыть</button>
 					<h2 class="feedback-title">Мы обязательно вам ответим!</h2>
@@ -317,12 +340,25 @@
 
 					</form>
 					</div>
+					</div>
 
 					<div class="search-form">
 					<form action="#" method="post">
 					<input type="text" name="search" id="search" placeholder="Что ищем?">
 					</form>
 					</div>
+
+					<script>
+          var loupe = .document.querySelector(".looking-for");
+          var popup2 = .document.querySelector(".search-form");
+
+          link.addEventListener("click", function(event) {
+              event.preventDefault();
+              popup2.classList.add("search-form-show");
+            });
+         
+
+					</script>
 
 						</div>
 					</div>
