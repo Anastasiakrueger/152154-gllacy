@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Gllacy shop</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 
@@ -27,7 +27,7 @@
 								<a class="menu-item" href="#">Каталог</a>
 								<ul class="sub-menu">
 									<li>
-										<a class="menu-item new" href="#">Новинки</a>
+										<a class="menu-item sub-menu-line" href="#">Новинки</a>
 									</li>
 									<li>
 										<a class="menu-item" href="#">Сливочное</a>
@@ -53,46 +53,63 @@
 					</nav>
 
 					<div class="header-right clearfix">
-						<div class="looking-for">
-							<a class="top-btn search-btn" href="#"></a>
-							<div class="hidden-element">
-								<div class="style-element">
-									<form action="#" method="post">
-										<input type="search" name="Looking-for">
-									</form>
-								</div>
+						<label class="looking-for" for="search-btn">
+							<input type="checkbox" class="input-search-btn" name="search" id="search-btn">
+							<!-- <a class="top-btn search-btn" href="#"></a> -->
+							<div class="search-form">
+								<form action="#" method="post">
+									<input type="text" name="search" id="search" placeholder="Что ищем?">
+								</form>
 							</div>
-						</div>
+						</label>
 
 						<div class="user-block">
 							<a class="top-btn user-btn" href="#">Вход</a>
+							<div class="modal-content">
+								<form action="#" method="post">
+									<input type="text" name="e-mail" placeholder="Электронная почта">
+									<input type="password" name="signs" placeholder="Пароль">
+									<button class="btn btn-modal-content" type="submit">Войти</button>
+
+									<a href="#" class="forget-password">Забыли пароль?</a>
+									<a href="#" class="new-login">Новая регистрация</a>
+								</form>
+							</div>
 						</div>
 
 						<div class="cart">
 							<a class="top-btn cart-btn" href="#">2 товара</a>
-							<div class="hidden-cart">
+							<div class="cart-content">
 								<div class="cart-element">
-									<div class="description"><a href="#">Пломбир с апельсиновы джемом 1,5 кг x 200 руб 300 руб</a></div>
-									<div class="cart-picture"><img src="http://placehold.it/150x100" width="33" height="33" alt="orange"></div>
-									<div class="remove-btn"><button class="remove" type="submit"></button></div>
+								<div class="cart-row">
+									<div class="cart-picture">
+										<img src="img/little-orange.png" width="33" height="33" alt="orange">
+									</div>
+									<a href="#">Пломбир с апельсиновым джемом 1,5 кг x 200 руб 300 руб</a>
+
+
+									<button class="remove-btn" type="button" title="Удалить">Удалить</button>
 								</div>
-								<div class="cart-element">
-									<div class="description"><a href="">Клубничный пломбир с присыпкой из белого шоколада 1,5 x 300 руб 450 руб</a></div>
-									<div class="cart-picture"><img src="http://placehold.it/150x100" width="33" height="33" alt="strawberry"></div>
-									<div class="remove-btn"><button class="remove" type="submit"></button></div>
+								<div class="cart-row">
+									<div class="cart-picture">
+										<img src="img/little-strawberry.png" width="33" height="33" alt="strawberry">
+									</div>
+									<a href="">Клубничный пломбир с присыпкой из белого шоколада 1,5 x 300 руб 450 руб</a>
+									<button class="remove-btn2" type="button" title="Удалить">Удалить</button>
 								</div>
-								<div class="final-price">Итого: 750 руб.</div>
-								<a class="btn">Оформить заказ</a>
 							</div>
+							<div class="final-price">Итого: 750 руб.</div>
+							<a class="btn">Оформить заказ</a>
 						</div>
 					</div>
 				</div>
+			</div>
 
-				<div class="some-info">
-					<div class="time-work"> с 10 до 20, ежедневно</div>
-					<div class="number">8 812 450-25-25</div>
-				</div>
-			</header>
+			<div class="some-info">
+				<div class="time-work"> с 10 до 20, ежедневно</div>
+				<div class="number">8 812 450-25-25</div>
+			</div>
+		</header>
 
 			<div class="slider">
 
@@ -141,6 +158,9 @@
 							<div class="price-tag">310 &#8381;/кг</div>
 						</div>
 						<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+						<div class="hidden-element">
+							<a class="btn product-btn" href="#">Быстрый просмотр</a>
+						</div>
 					</div>
 
 					<div class="product">
@@ -149,6 +169,9 @@
 							<div class="price-tag">380 &#8381;/кг</div>
 						</div>
 						<a href="#">Сливочно-кофейное с кусочками шоколада</a>
+						<div class="hidden-element">
+							<a class="btn product-btn" href="#">Быстрый просмотр</a>
+						</div>
 					</div>
 
 					<div class="product">
@@ -157,6 +180,9 @@
 							<div class="price-tag">355 &#8381;/кг</div>
 						</div>
 						<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+						<div class="hidden-element">
+							<a class="btn product-btn" href="#">Быстрый просмотр</a>
+						</div>
 					</div>
 
 					<div class="product">
@@ -165,6 +191,9 @@
 							<div class="price-tag">415 &#8381;/кг</div>
 						</div>
 						<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+						<div class="hidden-element">
+							<a class="btn product-btn" href="#">Быстрый просмотр</a>
+						</div>
 					</div>
 				</section>
 
@@ -204,7 +233,9 @@
 								<div class="frame">
 									<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 									<form action="#" method="post">
+									<div class="input-text">
 										<input type="text" placeholder="Электронная почта">
+										</div>
 										<a class="btn btn-send" href="#">Отправить</a>
 									</form>
 								</div>
@@ -275,111 +306,46 @@
 
 							</footer>
 
-							<div class="modal-content">
-								<form action="#" method="post">
-									<input type="text" name="e-mail" placeholder="Электронная почта">
-									<input type="password" name="signs" placeholder="Пароль">
-									<button class="btn btn-modal-content" type="submit">Войти</button>
+					<div class="parent_feedback">
+					</div>
+						<div class="feedback">
+							<button class="feedback-close" type="button" title="Закрыть">Закрыть</button>
+							<h2 class="feedback-title">Мы обязательно вам ответим!</h2>
+							<form class="feedback-form" action="#" method="post">
 
-									<a href="#" class="forget-password">Забыли пароль?</a>
-									<a href="#" class="new-login">Новая регистрация</a>
-								</form>
-							</div>
+								<input type="text" name="name" id="feedback-name" placeholder="Как вас зовут?">
+								<label class="hidden-feedback-label1" for="feedback-name">Как вас зовут?</label>
 
-							<script>
-              var link = document.querySelector(".user-block");
-              var magic = document.querySelector(".modal-content");
+								<input type="text" name="e-mail" id="feedback-mail" placeholder="Ваша почта для ответа?">
+								<label class="hidden-feedback-label2" for="feedback-mail">Ваша почта для ответа?</label>
 
-              link.addEventListener("click", function(event) {
-              event.preventDefault();
-              magic.classList.add("modal-content-show");
-            });
-         
+								<textarea class="text-feedback" name="text-send" id="text-send" rows="5" placeholder="Напишите что-нибудь..."></textarea>
+								<button class="btn btn-feedback" type="submit">Отправить</button>
 
-							</script>
-
-							<div class="cart-content">
-							<div class="cart-element">
-									<div class="description"><a href="#">Пломбир с апельсиновым джемом 1,5 кг x 200 руб 300 руб</a></div>
-									<div class="cart-picture"><img src="img/little-orange.png" width="33" height="33" alt="orange"></div>
-									<div class="remove-btn"><button class="remove" type="submit"></button></div>
-								</div>
-								<div class="cart-element">
-									<div class="description"><a href="">Клубничный пломбир с присыпкой из белого шоколада 1,5 x 300 руб 450 руб</a></div>
-									<div class="cart-picture"><img src="img/little-strawberry.png" width="33" height="33" alt="strawberry"></div>
-									<div class="remove-btn"><button class="remove" type="submit"></button></div>
-								</div>
-								<div class="final-price">Итого: 750 руб.</div>
-								<a class="btn">Оформить заказ</a>
-							</div>
+							</form>
 						</div>
-					</div>
 
-					<script>
-          var buy = document.querySelector(".cart");
-          var popup = document.querySelector(".cart-content");
 
-          
-          	popup.classList.add("cart-content-show");
-          });
+				</div>
+			</div>
+			<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+			<script type="text/javascript">
+				function initialize() {
+					var mapOptions = {
+						zoom: 15,
+						center: new google.maps.LatLng(59.9384313,30.3425057)
+					}
 
-					</script>
-
-          <div class="parent_feedback">
-					<div class="feedback">
-					<button class="feedback-close" type="button" title="Закрыть">Закрыть</button>
-					<h2 class="feedback-title">Мы обязательно вам ответим!</h2>
-					<form class="feedback-form" action="#" method="post">
-          
-          <input type="text" name="name" placeholder="Как вас зовут?">
-
-          <input type="text" name="e-mail" placeholder="Ваша почта для ответа?">
-
-          <textarea class="text-feedback" name="text-send" id="text-send" rows="5" placeholder="Напишите что-нибудь..."></textarea>
-          <button class="btn btn-feedback" type="submit">Отправить</button>
-
-					</form>
-					</div>
-					</div>
-
-					<div class="search-form">
-					<form action="#" method="post">
-					<input type="text" name="search" id="search" placeholder="Что ищем?">
-					</form>
-					</div>
-
-					<script>
-          var loupe = .document.querySelector(".looking-for");
-          var popup2 = .document.querySelector(".search-form");
-
-          link.addEventListener("click", function(event) {
-              event.preventDefault();
-              popup2.classList.add("search-form-show");
-            });
-         
-
-					</script>
-
-						</div>
-					</div>
-					<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
-					<script type="text/javascript">
-						function initialize() {
-							var mapOptions = {
-								zoom: 15,
-								center: new google.maps.LatLng(59.9384313,30.3425057)
-							}
-
-							var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-							var image = "img/pin.png";
-							var myLatLng = new google.maps.LatLng(59.9384313,30.3246357);
-							var beachMarker = new google.maps.Marker({
-								position: myLatLng,
-								map: map,
-								icon: image
-							});
-						}
-						google.maps.event.addDomListener(window, 'load', initialize);
-					</script>
-				</body>
-				</html>
+					var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+					var image = "img/pin.png";
+					var myLatLng = new google.maps.LatLng(59.9384313,30.3246357);
+					var beachMarker = new google.maps.Marker({
+						position: myLatLng,
+						map: map,
+						icon: image
+					});
+				}
+				google.maps.event.addDomListener(window, 'load', initialize);
+			</script>
+		</body>
+		</html>
