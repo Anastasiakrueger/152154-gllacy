@@ -494,7 +494,7 @@ input[type="radio"] {
 }
 
 .page-wrapper {
-/*  min-width: 940px;*/
+min-width: 900px;
 
   background: #849d8f url('../img/slide-1.png') no-repeat top center;
   transition: background-image 0.5s ease, background-color 0.5s ease;
@@ -640,7 +640,6 @@ input[type="radio"] {
 
 .sub-menu li:hover {
   background: #fbded8;
-  height: 40px;
 }
 
 .sub-menu li:active {
@@ -673,7 +672,7 @@ input[type="radio"] {
 
 .header-right {
   float: right;
-  width: 270px;
+  width: 255px;
   margin-top: 10px;
 }
 
@@ -711,7 +710,7 @@ input[type="radio"] {
 
 .search-form {
   position: absolute;
-  top: 40px;
+  top: 35px;
   right: -10px;
   width: 310px;
 
@@ -1208,7 +1207,7 @@ input[type="radio"] {
 }
 
 .product .product-btn {
-  padding: 10px 30px;
+  padding: 8px 30px;
   margin-top: 25px;
 }
 
@@ -1255,12 +1254,17 @@ input[type="radio"] {
   position: absolute;
   float: none;
   display: block;
-  bottom: -92px;
+  bottom: -70px;
   left: 0;
+  width: 100%;
+  max-width: 175px;
+  left: 50%;
+  -webkit-transform:translateX(-50%);
+  -ms-transform:translateX(-50%);
+  -o-transform:translateX(-50%);
+  transform:translateX(-50%);
+  padding: 10px 0;
 
-  padding-bottom: 20px 0;
-  margin-left: 35px;
-  margin-bottom: 20px;
   z-index: 500;
 }
 
@@ -1782,12 +1786,12 @@ padding: 30px 0;
 }
 
 .form-group {
-  padding: 7px;
+  padding: 8px 10px 0;
   margin: 0;
   border: none;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
-  padding-top: 10px;
+  height: 28px;
 }
 
 .sorting {
@@ -1801,6 +1805,7 @@ padding: 30px 0;
   overflow: hidden;
   cursor: pointer;
   background-position: 156px 15px;
+  height: 36px;
 
   color: #fff;
   -webkit-appearance: none;
@@ -1830,6 +1835,10 @@ option {
   margin-bottom: 10px;
 
   font-weight: 700;
+}
+
+.title-price {
+  margin-bottom: 13px;
 }
 
 .price-filter {
@@ -1880,6 +1889,11 @@ option {
   margin-bottom: 10px;
   position: relative;
   margin-top: 15px;
+}
+
+.long2 .form-group {
+  height: 28px;
+  padding: 8px 10px 0 10px;
 }
 
 .pagenav {
@@ -2010,7 +2024,7 @@ option {
 .filter-btn {
 	display: inline-block;
 	color: #fff;
-  padding: 7px 20px;
+  padding: 6px 20px;
 
   text-decoration: none;
   font-size: 16px;
@@ -2021,13 +2035,13 @@ option {
   box-sizing: border-box;
   font-weight: 700;
 
-  margin-top: 45px;
+  margin-top: 47px;
   float: left;
 
 }
 
 .filter-form {
-  padding: 10px;
+
 }
 
 .filter-btn:hover {
@@ -2048,7 +2062,7 @@ option {
 
   cursor: pointer;
   vertical-align: top;
-  padding-left: 40px;
+  padding-left: 30px;
 
 }
 
@@ -2116,7 +2130,9 @@ input[type="text"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 10px 5px;
+  padding: 0px 5px;
+  height: 40px;
+  line-height: 40px;
 }
 
 .input-row .input-row__text {
@@ -2136,14 +2152,20 @@ input[type="password"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  height: 40px;
+  line-height: 40px;
 }
 
 input[type="password"]:hover {
   border: 2px solid #c7c6c5;
+  box-sizing: border-box;
+  padding: 0 4px;
 }
 
 input[type="text"]:hover {
   border: 2px solid #c7c6c5;
+  box-sizing: border-box;
+  padding: 0 4px;
 }
 
 textarea {
@@ -2217,16 +2239,23 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 
   cursor: pointer;
 }
-
-.parent_feedback{
-  background: #000;
-  width: 100%;
-  height: 100%;
-  z-index: 10000;
-  opacity: 0.7;
-  position: fixed;
-}
 /*-------MODAL--------*/
+
+@keyframes bounce {
+  0%   {
+    transform: translateY(6000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .feedback {
   position: fixed;
   top: 320px;
@@ -2244,12 +2273,18 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   background: #f8f7f4;
   border-radius: 10px;
   box-shadow: 0 20px 20px 10px rgba(0, 0, 0, 0.4);
-  z-index: 200;
+  z-index: 500;
 
   display: none;
 }
 
-#wrap {
+.feedback-show {
+  display: block;
+  animation: bounce 1s;
+}
+
+
+.wrap {
   display: none;
   opacity: 0.6;
   position: fixed;
@@ -2259,10 +2294,13 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
   bottom: 0;
   padding: 16px;
   background: rgba(1, 1, 1, 0.725);
-  z-index: 100;
+  z-index: 400;
   overflow: auto;
 }
 
+.wrap-show {
+  display: block;
+}
 
 .feedback-label1 {
   position: absolute;

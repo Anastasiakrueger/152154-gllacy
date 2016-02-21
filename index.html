@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Gllacy shop</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 
@@ -260,7 +260,7 @@
 										(с 10 до 20 ежедневно)
 									</p>
 
-									<a class="btn btn-form" href="#" onclick="show('block')">Форма обратной связи</a>
+									<a class="btn btn-form" href="#">Форма обратной связи</a>
 								</div>
 							</div>
 						</div>
@@ -304,63 +304,35 @@
 								</section>
 
 							</footer>
+							<div class="wrap"></div>
+							<div class="feedback">
+								<button class="feedback-close" type="button" title="Закрыть">Закрыть</button>
+								<h2 class="feedback-title">Мы обязательно вам ответим!</h2>
+								<form class="feedback-form" action="#" method="post">
 
-							<script type="text/javascript">
+									<div class="feedback-form__row">
+										<input type="text" name="name" id="feedback-name">
+										<label class="feedback-label1" for="feedback-name">Как вас зовут?</label>
+									</div>
 
-					function show(state){
+									<div class="feedback-form__row">
+										<input type="text" name="e-mail" id="feedback-mail">
+										<label class="feedback-label2" for="feedback-mail">Ваша почта для ответа?</label>
+									</div>
 
-						document.getElementById('feedback').style.display = state;			
-						document.getElementById('wrap').style.display = state; 			
-					}
+									<div class="feedback-form__row">
+										<textarea class="text-feedback" name="text-send" id="text-send" rows="5"></textarea>
+										<label class="feedback-label3" for="text-send">Напишите что-нибудь...</label>
+									</div>
+									<button class="btn btn-feedback" type="submit">Отправить</button>
 
-				</script>
+								</form>
+							</div>
 
-				<div class="wrap" id="wrap" onclick="show('none')" style="display: none;"></div>
-				<div class="feedback" id="feedback" style="display: none;">
-					<button class="feedback-close" type="button" title="Закрыть" onclick="show('none')">Закрыть</button>
-					<h2 class="feedback-title">Мы обязательно вам ответим!</h2>
-					<form class="feedback-form" action="#" method="post">
 
-						<div class="feedback-form__row">
-							<input type="text" name="name" id="feedback-name">
-							<label class="feedback-label1" for="feedback-name">Как вас зовут?</label>
 						</div>
-
-						<div class="feedback-form__row">
-							<input type="text" name="e-mail" id="feedback-mail">
-							<label class="feedback-label2" for="feedback-mail">Ваша почта для ответа?</label>
-						</div>
-
-						<div class="feedback-form__row">
-							<textarea class="text-feedback" name="text-send" id="text-send" rows="5"></textarea>
-							<label class="feedback-label3" for="text-send">Напишите что-нибудь...</label>
-						</div>
-						<button class="btn btn-feedback" type="submit">Отправить</button>
-
-					</form>
-				</div>
-
-
-			</div>
-		</div>
-		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
-		<script type="text/javascript">
-			function initialize() {
-				var mapOptions = {
-					zoom: 15,
-					center: new google.maps.LatLng(59.9384313,30.3425057)
-				}
-
-				var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-				var image = "img/pin.png";
-				var myLatLng = new google.maps.LatLng(59.9384313,30.3246357);
-				var beachMarker = new google.maps.Marker({
-					position: myLatLng,
-					map: map,
-					icon: image
-				});
-			}
-			google.maps.event.addDomListener(window, 'load', initialize);
-		</script>
-	</body>
-	</html>
+					</div>
+					<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+					<script src="js/script.min.js"></script>
+				</body>
+				</html>
