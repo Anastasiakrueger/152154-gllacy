@@ -7,7 +7,6 @@
 						link.addEventListener('click', function(event) {
 							event.preventDefault();
 							popup.classList.add('feedback-show');
-							window.scrollTo(0, 0);
 							bg.classList.add('wrap-show');
 						});
 						
